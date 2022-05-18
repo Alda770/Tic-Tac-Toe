@@ -1,33 +1,218 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
-  <title>Cat´s game</title>
-  <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="LOGO.jpg">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
- <div class="container">
-    <h1>Tic Tac Toe</h1>
-    <div class="game-container">
-        <div class="game-cell"></div>
-      <div class="game-cell"></div>
-      <div class="game-cell"></div>
-      <div class="game-cell"></div>
-      <div class="game-cell"></div>
-      <div class="game-cell"></div>
-      <div class="game-cell"></div>
-      <div class="game-cell"></div>
-      <div class="game-cell"></div>
-    </div>
-    <h2 class="game-notification"></h2>
-      <button class="game-restart">Restablecer Tablero</button>    
-  </div>
-  <script src="index.js"></script>
-</body>
 
+   <div class="head">
+
+                <div class="logo">
+                    <a href="#">Fitnes Center</a>
+                </div>
+         
+            <nav class="navbar">
+                <a href="Nosotros.html">Nosotros</a>
+                <a href="#">Contacto</a>
+                <a href="#">Productos</a>
+            </nav>
+   </div>
+
+ <header class="header"> 
+    <div class="container">
+        <div class="row">
+            <div class="four colums">
+            </div> 
+         
+              <div class="two colums u-pull-right">
+                <ul>
+            <li class="submenu">
+                <img src="img/pngegg.png" alt="">
+                <div id="progreso">
+                    <p class="vacio">¿Que desea hacer este dia?</p>
+                       <table class="u-full-width">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Peso</th>
+                                <th>Altura</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="img/Cuerpo1.jpg" width="100">
+                                </td>
+                                <td>Peso establecido: 90kg</td>
+                                <td>Altura establecida: 1.70cm</td>
+                                <td><a href="#" class="borrar-Cuerpo"></a>X</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="img/Cuerpo2.jpg" width="100">
+                                </td>
+                                <td>Peso establecido: 70kg</td>
+                                <td>Altura establecida: 1.75cm</td>
+                                <td><a href="#" class="borrar-Cuerpo"></a>X</td>
+                            </tr>
+                        </tbody>
+                       </table>
+                       <a href="#" class="button u-full-width">Eliminar Planes de Ejercicio</a>
+                </div>
+               </ul>
+             </div>
+            </div>
+        </div>
+    </div>  
+   </header>
+
+    <div class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="six colums">
+                    <div class="contenido-hero">
+                        <h2>Prueba un plan nuevo</h2>
+                        <p>Todos los planes en un mes</p>
+                        <form>
+                            <input class="u-full-width" type="text" placeholder="¿Que te gustaria ejercitar?" id="buscador">
+                            <input type="submit" class="submit-buscador">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                <div class="four colums icono icono4">
+                    <p>Muchos planes de ejercicio<br>
+                    Exlora nuevas ideas</p>
+                </div>
+                <div class="four colums icono icono2">
+                    <p>Instructores Expertos<br>
+                    ¿necesitas ayuda?</p>
+                </div>
+                <div class="four colums icono icono3">
+                    <p>Plan nutricional<br>
+                    ¿Que es lo que buscas?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="lista-ejercicios" class="container">
+    <h1 class="encabezado">¿Que tipo de cuerpo tienes?</h1>
+
+    <div class="row">
+        <div class="four columns">
+            <div class="card">
+                <img src="img/Cuerpo1.jpg" class="imagen-Cuerpo u-full-width-1px">
+                <div class="info-card">
+                    <h4>Plan de ejercicio para Endomorfo</h4>
+                    <p>Normal</p>
+                    <img src="img/estrellas.png">
+                    <p class="Tiempo">30 minutos. <span class="u-pull-right">45 minutos</span> </p>
+                    <a href="#" class="u-full-width button-primary button input agregar-rutina" data-id="1">Agregar a rutina</a>
+                </div>
+            </div>
+        </div>
+        <div class="four columns">
+            <div class="card">
+                <img src="img/Cuerpo2.jpg" class="imagen-Cuerpo u-full-width-1px">
+                <div class="info-card">
+                    <h4>Plan de ejercicio para Ectoomorfo</h4>
+                    <p>Normal</p>
+                    <img src="img/estrellas.png">
+                    <p class="Tiempo">30 minutos. <span class="u-pull-right">45 minutos</span> </p>
+                    <a href="#" class="u-full-width button-primary button input agregar-rutina" data-id="1">Agregar a rutina</a>
+                </div>
+            </div>
+        </div>
+        <div class="four columns">
+            <div class="card">
+                <img src="img/Cuerpo3.jpg" class="imagen-Cuerpo u-full-width-1px">
+                <div class="info-card">
+                    <h4>Plan de ejercicio para Mesomorfo</h4>
+                    <p>Normal</p>
+                    <img src="img/estrellas.png">
+                    <p class="Tiempo">30 minutos. <span class="u-pull-right">45 minutos</span> </p>
+                    <a href="#" class="u-full-width button-primary button input agregar-rutina" data-id="1">Agregar a rutina</a>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <div class="row">
+        <div class="four columns">
+            <div class="card">
+                <img src="img/abdomen.jpg" class="imagen-Cuerpo u-full-width-1px">
+                <div class="info-card">
+                    <h4>Plan de ejercicio para Abdomen</h4>
+                    <p>Normal</p>
+                    <img src="img/estrellas.png">
+                    <p class="Tiempo">30 minutos. <span class="u-pull-right">45 minutos</span> </p>
+                    <a href="#" class="u-full-width button-primary button input agregar-rutina" data-id="1">Agregar a rutina</a>
+                </div>
+            </div>
+        </div>
+        <div class="four columns">
+            <div class="card">
+                <img src="img/brazo.jpg" class="imagen-Cuerpo u-full-width-1px">
+                <div class="info-card">
+                    <h4>Plan de jercicio para Brazo</h4>
+                    <p>Normal</p>
+                    <img src="img/estrellas.png">
+                    <p class="Tiempo">30 minutos. <span class="u-pull-right">45 minutos</span> </p>
+                    <a href="#" class="u-full-width button-primary button input agregar-rutina" data-id="1">Agregar a rutina</a>
+                </div>
+            </div>
+        </div>
+        <div class="four columns">
+            <div class="card">
+                <img src="img/pierna.jpg" class="imagen-Cuerpo u-full-width-1px">
+                <div class="info-card">
+                    <h4>Plan de ejercicio para Piernas</h4>
+                    <p>Normal</p>
+                    <img src="img/estrellas.png">
+                    <p class="Tiempo">30 minutos. <span class="u-pull-right">45 minutos</span> </p>
+                    <a href="#" class="u-full-width button-primary button input agregar-rutina" data-id="1">Agregar a rutina</a>
+                </div>
+            </div>
+        </div>
+    </div>   
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="four columns">
+                <nav class="menu">
+                    <a class="enlace" href="#">¿No encuentras lo que buscas?</a>
+                    <a class="enlace" href="#">Contacta a un instructor</a>
+                    <a class="enlace" href="#">¿Hay algun problema?</a>
+                    <a class="enlace" href="#">¿Tienes alguna sugerencia?</a>
+                    <a class="enlace" href="https://www.buap.mx/content/complejo-regional-centro">BACHILLERATO TECNOLOGICO SAN JOSE CHIAPA</a>
+                </nav>
+            </div>
+            <div class="four colums">
+                <nav class="menu">
+
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+</body>
 </html>

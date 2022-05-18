@@ -1,0 +1,219 @@
+body {
+     background-color: black;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    background:  -webkit-linear-gradient(left, #f30404 0%, #ffd900 80% );
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #3f3f3f;
+}
+
+h1 {
+    text-align: left;
+    color: whitesmoke;
+}
+h4 {
+    font-size: 16px;
+    font-weight: 200;
+    text-align: center;
+}
+header {
+    padding: 20px 0 0 0;
+    background: black;
+    text-align: center;
+}
+
+@media (min-widtch : 750px) {
+    header {
+        text-align: left;
+    }
+}
+
+.borrar-Cuerpo {
+    background-color: #fbaf32;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: rgb(71, 71, 71);
+    font-weight: bold;
+
+}
+
+ul {
+ list-style: none;   
+}
+
+.hero {
+    background-image: url(../img/hero.jpg);
+    height: 551px;
+}
+.encabezado {
+    margin: 40px 0;
+    color: white;
+}
+.submenu {
+    position: relative;
+}
+.submenu #progreso {
+    display: none;
+}
+.submenu:hover #progreso{
+    display: block;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    z-index: 1;
+    background: #17181b;
+    padding: 20px;
+}
+.vacio {
+    padding: 10px;
+    background-color: #fbaf32;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+.button {
+    background-color: #b95a00;
+    color: rgb(255, 255, 255);
+}
+.contenido-hero {
+    margin-top: 10px;
+    color: white;
+}
+.contenido-hero form  {
+    position: relative;
+    margin-bottom: 0;
+}
+.contenido-hero form #buscador {
+    height: 50px;
+    margin-bottom: 0;
+}
+.contenido-hero forms .submit-buscador {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 80%;
+    padding: 0;
+    display: block;
+    text-indent: -9999px;
+    width: 50px;
+    background-image: url(../img/lupa.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border:  none;
+}
+
+.barra {
+    padding: 20px 0;
+    background: #fbaf32;
+    background: -webkit-linear-gradient(left, #f30404 0%, #ffd900 80% );
+}
+.barra p {
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+.icono {
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 60px;
+    background-size: 55px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+@media (min-widtch: 650px) {
+    .icono{
+    margin-bottom: 0;
+    }
+}
+
+.icono4 {
+    background-image: url(../img/icono4.png);
+}
+.icono2 {
+    background-image: url(../img/icono2.png);
+}
+.icono3 {
+    background-image: url(../img/icono3.png);
+}
+
+#lista-ejercicios .row {
+    margin-bottom: 20px;
+}
+.agregar-carrito{
+    margin: 10x 0;
+}
+.card {
+    text-align: center;
+    border: 1px solid rgba( 255, 255, 255, 0.05);
+    background: #1d2124;
+}
+@media (min-width:450px){
+    .card {
+        text-align: left;
+    }
+}
+.info-card {
+    padding: 10px 20px;
+    color: white;
+}
+.info-card ,
+.card h4 {
+    margin-bottom: 5px;
+}
+.info-card .tiempo {
+    text-decoration: line-through;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.info-card.tiempo span {
+font-weight: 700;
+font-size: 22px;
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 40px;
+    background: #1d2124;
+}
+
+.footer .menu a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
